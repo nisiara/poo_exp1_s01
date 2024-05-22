@@ -15,7 +15,7 @@ public class Cliente {
   private String domicilio;
   private String comuna;
   private String telefono;
-  private Cuenta cuenta;
+  private Cuenta cuenta = new Cuenta();
   
   // CONSTRUCTOR
   public Cliente(){};
@@ -23,9 +23,6 @@ public class Cliente {
   // SETTERS & GETTERS
   public Cuenta getCuenta() {
     return this.cuenta;
-  }
-  public void setCuenta(Cuenta cuenta) {
-    this.cuenta = cuenta;
   }
   public void setRut(String rut) {
     while(rut.length() != 11 && rut.length() != 12 ){

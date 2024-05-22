@@ -7,8 +7,6 @@ public class Banco {
   
   Scanner inputUsuario = new Scanner(System.in);
   
-  Cuenta cuentaCliente = new Cuenta();
-  
   // ATRIBUTOS
   private String nombre = "bank boston";
   private Cliente cliente = new Cliente() ;
@@ -73,11 +71,8 @@ public class Banco {
 
     System.out.println("Asígnale un número de cuenta al cliente (Número de 9 dígitos)");
     numeroCuentaRegistro = inputUsuario.next();
-    cuentaCliente.setNumeroCuenta(numeroCuentaRegistro);
+    cliente.getCuenta().setNumeroCuenta(numeroCuentaRegistro);
     inputUsuario.nextLine();
-
-    cliente.setCuenta(cuentaCliente);
-
 
     System.out.println("\n**** ¡Cliente creado exitosamente! ****");
     
