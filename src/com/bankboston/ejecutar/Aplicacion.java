@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Aplicacion {
   public static void main(String[] args){
     
-    Banco bankBoston = new Banco();
+    Banco bankBoston = new Banco("bank boston", new Cliente());
     Scanner inputUsuario = new Scanner(System.in);
     List<Cliente> clientes = new ArrayList<>();
    

@@ -8,11 +8,14 @@ public class Banco {
   Scanner inputUsuario = new Scanner(System.in);
   
   // ATRIBUTOS
-  private String nombre = "bank boston";
-  private Cliente cliente = new Cliente() ;
+  private String nombre;
+  private Cliente cliente;
   
   // CONSTRUCTOR
-  public Banco(){};
+  public Banco(String nombre, Cliente cliente){
+    this.nombre = nombre;
+    this.cliente = cliente;
+  };
   
     // GETTERS & SETTERS
   public Cliente getCliente() {
@@ -75,14 +78,5 @@ public class Banco {
     inputUsuario.nextLine();
 
     System.out.println("\n**** ¡Cliente creado exitosamente! ****");
-    
-    
   };
-  
-  
-  
-
-  
-  
-  
 }
